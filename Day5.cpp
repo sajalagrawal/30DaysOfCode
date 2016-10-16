@@ -1,35 +1,38 @@
+//https://www.hackerrank.com/challenges/30-loops
+//Author - Sajal Agrawal
+//@sajalagrawal
+
+#include <map>
+#include <set>
+#include <list>
 #include <cmath>
+#include <ctime>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <string>
+#include <bitset>
 #include <cstdio>
+#include <limits>
 #include <vector>
+#include <climits>
+#include <cstring>
+#include <cstdlib>
+#include <fstream>
+#include <numeric>
+#include <sstream>
 #include <iostream>
 #include <algorithm>
+#include <unordered_map>
+
 using namespace std;
 
 
-int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
-    int t,a[100],b[100],k,n[100],j,i;
-    cin>>t;
-    for(i=0;i<t;i++)
-        {
-        cin>>a[i];
-        cin>>b[i];
-        cin>>n[i];
+int main(){
+    int n,i;
+    cin >> n;
+    for(i=1;i<=10;i++){
+        cout<<n<<" x "<<i<<" = "<<(n*i)<<"\n";
     }
-    
-    for(i=0;i<t;i++){
-         k=a[i]+ b[i];
-        cout<<k<<" ";
-   for(j=1;j<=n[i]-1;j++)
-       {
-       
-      k=k+(b[i]*pow(2,j));
-      
-       cout<<k<<" ";
-   }
-        cout<<"\n";
-    }
-    
-    
     return 0;
 }
