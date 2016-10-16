@@ -1,3 +1,7 @@
+//https://www.hackerrank.com/challenges/30-class-vs-instance
+//Author - Sajal Agrawal
+//@sajalagrawal
+
 using namespace std;
 #include <iostream>
 
@@ -13,7 +17,7 @@ Person::Person(int initial_Age){
 if(initial_Age<0)
     {
     age=0;
-    cout<<"This person is not valid, setting age to 0.\n";
+    cout<<"Age is not valid, setting age to 0.\n";
 }
     else
         age=initial_Age;
@@ -25,16 +29,12 @@ if(age<13)
     else if(age>=13 && age<18)
     cout<<"You are a teenager.\n";
     else
-    cout<<"You are old.\n";
-    
+    cout<<"You are old.\n";   
 }
-    
 
 void Person::yearPasses(){
   // Increment the age of the person in here
     age=age+1;
-    
-
 }
 
 int main(){
