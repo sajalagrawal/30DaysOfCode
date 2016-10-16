@@ -1,3 +1,7 @@
+//https://www.hackerrank.com/challenges/30-conditional-statements
+//Author - Sajal Agrawal
+//@sajalagrawal
+
 #include <map>
 #include <set>
 #include <list>
