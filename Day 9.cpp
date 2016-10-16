@@ -1,32 +1,23 @@
+//https://www.hackerrank.com/challenges/30-recursion
+//Author - Sajal Agrawal
+//@sajalagrawal
+
 #include <cmath>
 #include <cstdio>
 #include <vector>
 #include <iostream>
 #include <algorithm>
 using namespace std;
-int find_gcd(int a,int b){
-    //Write base condition
-    int g;
-    if(a==b)
-        {
-        g=a;
-    }
-    else if(a>b)
-        {
-       g=find_gcd(a-b,b);
-    }
-     else         {
-       g=find_gcd(b-a,a);
-    }
-return g;
-}
 
+int factorial(int);
 int main() {
-    int a,b;
-    //Take input
-    cin>>a>>b;
-    
-    int gcd=find_gcd(a,b);
-    cout<<gcd;
-    return 0;   
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    int n;
+    cin>>n;
+    cout<<factorial(n)<<"\n";
+    return 0;
+}
+int factorial(int n){
+    if(n==1)return 1;
+    return n*factorial(n-1);
 }
