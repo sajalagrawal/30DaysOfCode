@@ -1,41 +1,30 @@
-#include <map>
-#include <set>
-#include <list>
+//https://www.hackerrank.com/challenges/30-review-loop
+//Author - Sajal Agrawal
+//@sajalagrawal
+
 #include <cmath>
-#include <ctime>
-#include <deque>
-#include <queue>
-#include <stack>
-#include <string>
-#include <bitset>
 #include <cstdio>
-#include <limits>
 #include <vector>
-#include <climits>
-#include <cstring>
-#include <cstdlib>
-#include <fstream>
-#include <numeric>
-#include <sstream>
 #include <iostream>
 #include <algorithm>
-#include <unordered_map>
-
 using namespace std;
 
-int main(){
-    int n,i,j;
-    cin >> n;
-    for(i=1;i<=n;i++)
-        {
-        for(j=n-i;j>=1;j--)
-            {
-            cout<<" ";
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    int t,l,i;
+    cin>>t;
+    string s;
+    while(t--){
+        cin>>s;
+        l=s.size();
+        for(i=0;i<l;i=i+2){
+            cout<<s[i];
         }
-        
-        for(j=1;j<=i;j++)
-            cout<<"#";
-        
+        cout<<" ";
+        for(i=1;i<l;i=i+2){
+            cout<<s[i];
+        }
         cout<<"\n";
         
     }
