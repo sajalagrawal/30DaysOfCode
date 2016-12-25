@@ -3,10 +3,9 @@ Solutions to the problems of 30DaysOfCode @ Hackerrank.com
 
 https://www.hackerrank.com/domains/tutorials/30-days-of-code
 
-#Content
+##Content
 
 Day 0 : Hello World
-
 Day 1: Data Types
 
 Day 2: Operators
